@@ -1,6 +1,6 @@
 {
   "name": "sonar-web-frontend-duplication",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper for JSCPD producing sonar compliant files",
   "main": "sonarWebDuplication.js",
   "scripts": {
