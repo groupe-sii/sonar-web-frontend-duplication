@@ -1,0 +1,31 @@
+{
+  "name": "sonar-web-frontend-duplication",
+  "version": "1.0.0",
+  "description": "Wrapper for JSCPD producing sonar compliant files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedric-legallo/sonar-web-frontend-duplication.git"
+  },
+  "keywords": [
+    "reporters",
+    "jscpd",
+    "duplication",
+    "sonar"
+  ],
+  "author": "Cédric Le Gallo <cedric.legallo@gmail.com> (http://www.groupe-sii.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedric-legallo/sonar-web-frontend-duplication/issues"
+  },
+  "homepage": "https://github.com/cedric-legallo/sonar-web-frontend-duplication#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jscpd": "0.0.6",
+    "mkdirp": "^0.5.1",
+    "run-sequence": "^1.1.5"
+  }
+}
