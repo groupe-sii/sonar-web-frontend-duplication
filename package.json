@@ -2,7 +2,7 @@
   "name": "sonar-web-frontend-duplication",
   "version": "1.0.0",
   "description": "Wrapper for JSCPD producing sonar compliant files",
-  "main": "index.js",
+  "main": "sonarWebDuplication.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
