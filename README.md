@@ -41,7 +41,7 @@ gulp.task('lint', function() {
 		return SonarWebReporters.launchReporters({
 				project: projectName, 
 				css : {
-					src : "src/**/*.scss",
+					src : "src/**/*.css",
 					report : "reports/sonar/css-duplication.xml",
 					task : "ci-cssduplication"
 				},
@@ -51,12 +51,12 @@ gulp.task('lint', function() {
 					task : "ci-scssduplication"
 				},
 				html : {
-					src : "src/**/*.scss",
+					src : "src/**/*.html",
 					report : "reports/sonar/html-duplication.xml",
 					task : "ci-htmlduplication"
 				},
 				js : {
-					src : "src/**/*.scss",
+					src : "src/**/*.js",
 					report : "reports/sonar/js-duplication.xml",
 					task : "ci-jsduplication"
 				}
