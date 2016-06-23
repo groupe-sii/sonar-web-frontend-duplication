@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 		projectName = 'sonar-web-frontend-helloworld';
 
 gulp.task('duplication', function() {
-		return SonarWebReporters.launchReporters({
+		return SonarWebDuplication.launchReporters({
 				project: projectName, //your project's name
 				css : true,//activate css code duplication check with default values
 				scss : true,//activate scss code duplication check with default values
@@ -38,7 +38,7 @@ Since not all project will match the default values, you can customize it, each 
 ##Default values
 ```Javascript
 gulp.task('lint', function() {
-		return SonarWebReporters.launchReporters({
+		return SonarWebDuplication.launchReporters({
 				project: projectName, 
 				css : {
 					src : "src/**/*.css",
