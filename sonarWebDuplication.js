@@ -72,6 +72,16 @@ function SonarWebDuplication() {
 					registerTask(jsTask, jsSources, "javascript", jsPath);
 					tasks.push(jsTask);
 			}
+			
+			if (options.ts){
+				var tsSources = options.ts.src || options.ts.sources || "src/**/*.ts",
+					tsPath = options.ts.report || "reports/sonar/ts-duplication.xml",
+					tsTask = options.ts.task || "ci-tsduplication";
+					createReportPath(tsPath);
+
+					registerTask(tsTask, tsSources, "typescript", tsPath);
+					tasks.push(tsTask);
+			}
 
 			return run(tasks);
 		}
